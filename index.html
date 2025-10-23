@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tiny Troll CTF</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="card">
+    <h1>Tiny Troll CTF</h1>
+    <p id="welcome">Welcome, challenger. Look around — some flags are obvious, others hide in plain sight.</p>
+
+    <section>
+      <h2>Obvious (fake) flags</h2>
+      <ul>
+        <li>WDT{"fake_flag_one"}</li>
+        <li>WDT{"this is definitely a fake flag"} </li>
+        <li>WDT{"something here saying fake flag"}</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Try these hints</h2>
+      <ol>
+        <li>Inspect source (HTML comments, CSS, and JS).</li>
+        <li>Open devtools console and check the script output.</li>
+        <li>Copy text from the paragraph and paste into a hex/utf-8 viewer (zero-width may be present).</li>
+      </ol>
+      <button id="reveal-btn">Try reveal (console)</button>
+    </section>
+
+    <section>
+      <h2>Embedded image (SVG)</h2>
+      <div class="svg-wrap">
+        <desc>V0RUe3dlYl9zdWNjM3NzZnVsbHlfZDNjMGRlZF9kZjBkYTcyN30=</desc>
+        <img alt="decorative" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iNTAiPjxkZXNjPkZMQVp7U1ZHX0JBU0U2NF9ERUxDRVNTRX08L2Rlc2M+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSI1MCIgc3R5bGU9ImZpbGw6I2ZlZjtlNDsiLz48dGV4dCB4PSIxMCIgeT0iMzAiIHN0eWxlPSJmb250LXNpemU6MTJweDsiPlJlYWR5PC90ZXh0Pjwvc3ZnPg==" />
+      </div>
+    </section>
+
+    <footer>
+      <small>Made for giggles — try view-source or devtools.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
